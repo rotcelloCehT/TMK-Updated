@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import TMKLogo from 'assets/tmklogo.svg'
-import BannerImg from 'assets/banner-thumb.png';
+import BannerImg from 'assets/tools.svg';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 
@@ -25,7 +25,7 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="banner" />
+          <Image src={BannerImg} alt="banner" width="100%" />
         </Box>
       </Container>
     </section>
