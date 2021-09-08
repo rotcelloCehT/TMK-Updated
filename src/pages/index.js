@@ -24,10 +24,10 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Startup Landing 005" />
           <Banner />
-          <Feature />
-          <ServiceSection />
-          <CoreFeature />
           <Gallery />
+          <Feature />
+          {/* <ServiceSection /> */}
+          <CoreFeature />
           <WorkFlow />
           <Package />
           <TeamSection />

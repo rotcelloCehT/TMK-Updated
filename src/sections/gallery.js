@@ -78,7 +78,7 @@ const responsive = {
 
 export default function TestimonialCard() {
   return (
-    <section id="testimonial" sx={{ variant: 'section.testimonial' }}>
+    <section id="gallery" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
         <SectionHeader slogan="Our Work" title="Your Imagination Is Our Creation" />
       </Container>
@@ -90,7 +90,7 @@ export default function TestimonialCard() {
           centerMode={false}
           className=""
           containerClass="carousel-container"
-          customButtonGroup={<ButtonGroup />}
+          // customButtonGroup={<ButtonGroup />}
           dotListClass=""
           draggable
           focusOnSelect={true}
@@ -126,13 +126,14 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     mt: '-30px',
+    mb: '-60px',
     px: '15px',
     '.carousel-container': {
       width: '100%',
-      maxWidth: [
-        '100%',
-      ],
-      mr: ['auto', null, null, null, null, null, null, 'auto'],
+      // maxWidth: ['100%','100%', '100%', '100%', '100%', '100%', '100%', '80%'],
+      maxWidth: '100%',
+      // backgroundColor: ['red', 'green', 'yellow', 'pink', 'purple', 'orange', 'blue', 'lime'],
+      mr: 'auto',
       ml: 'auto',
       '.react-multi-carousel-item': {
         transition: 'all 0.25s',
@@ -140,6 +141,10 @@ const styles = {
     },
   },
   reviewCard: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
     boxShadow: '0px 0px 1px rgba(38, 78, 118, 0.35)',
     transition: 'all 0.3s',
     borderRadius: '6px',
@@ -158,46 +163,20 @@ const styles = {
       '28px 20px 30px 20px',
       '28px 15px 30px 15px',
       '28px 15px 30px 15px',
-      '30px 20px 40px',
+      '28px 15px 30px 15px',
     ],
     '&:hover': {
       boxShadow: '0px 6px 30px rgba(38, 78, 118, 0.1)',
     },
     '.image': {
       flexShrink: 0,
-      mr: [3, null, null, 3],
       display: 'flex',
       img: {
         width: 'auto',
         height: 'auto',
+        maxHeight: ['100vh','100vh', '100vh', '100vh', '100vh', '80vh', '80vh', '80vh'],
         objectFit: 'cover',
       },
     },
   },
-  // title: {
-  //   fontSize: [1, 2],
-  //   fontWeight: 700,
-  //   mb: [3, null, null, '22px'],
-  //   color: 'text',
-  //   lineHeight: 1.6,
-  // },
-  // description: {
-  //   fontSize: [1, null, null, 2],
-  //   fontWeight: 'normal',
-  //   color: 'text',
-  //   lineHeight: [1.85, null, 2],
-  // },
-  // heading: {
-  //   fontSize: [1, null, null, 2],
-  //   fontWeight: 700,
-  //   mb: '3px',
-  //   color: 'text',
-  //   lineHeight: 1.3,
-  // },
-  // designation: {
-  //   color: 'primary',
-  //   fontWeight: '500',
-  //   fontSize: 1,
-  //   lineHeight: 1.4,
-  // },
 };

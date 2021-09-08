@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
+import { Link } from 'react-scroll';
 import TMKLogo from 'assets/tmklogo.svg'
 import BannerImg from 'assets/tools.svg';
 import KitchenImg from 'assets/images/kitchen.jpg';
@@ -18,11 +19,21 @@ export default function Banner() {
             Custom Cabinetry And Woodwork
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+          No job is too small, no detail too much and
+          no project is too large. Our capacity will encompass
+          whatever the need is.
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Button variant="primary">
+            <Link
+                activeClass="active"
+                to={"gallery"}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                >Explore
+              </Link>
+          </Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
@@ -76,6 +87,9 @@ const styles = {
       mx: 'auto',
       textAlign: 'center',
       mb: ['40px', null, null, null, null, 7],
+      img: {
+        mb: '50px',
+      },
     },
     imageBox: {
       justifyContent: 'center',

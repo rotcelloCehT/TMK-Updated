@@ -3,14 +3,14 @@ import { jsx, Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 import Image from 'components/image';
 
-import FeatureThumb from 'assets/core-feature.png';
+import FeatureThumb from 'assets/images/carpentry.jpg';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: 'Services',
+  title: 'Working with passion',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
+    'TMK Inc. is small enough to care and large enough to get the job done. We have decades of Carpentry experience and experience in all types of construction. Ultimately, we are a family business and we treat our customers the same way.',
   btnName: 'Get Started',
   btnURL: '#',
 };
@@ -64,9 +64,11 @@ const styles = {
     mr: 'auto',
     ml: ['auto', null, null, null, 7],
     '> img': {
+      borderRadius: '15px',
       position: 'relative',
       zIndex: 1,
       height: [310, 'auto'],
+      boxShadow: '0px 6px 30px rgba(38, 78, 118, 0.1)',
     },
   },
   shapeBox: {
