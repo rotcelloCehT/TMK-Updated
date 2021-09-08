@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
 import TMKLogo from 'assets/tmklogo.svg'
 import BannerImg from 'assets/tools.svg';
+import KitchenImg from 'assets/images/kitchen.jpg';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 

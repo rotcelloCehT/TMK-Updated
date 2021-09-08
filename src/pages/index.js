@@ -12,6 +12,7 @@ import CoreFeature from '../sections/core-feature';
 import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
+import Gallery from '../sections/gallery';
 import TestimonialCard from '../sections/testimonial';
 import BlogSection from '../sections/blog-section';
 import Subscribe from '../sections/subscribe';
@@ -23,13 +24,14 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Startup Landing 005" />
           <Banner />
-          <KeyFeature />
-          <ServiceSection />
           <Feature />
+          <ServiceSection />
           <CoreFeature />
+          <Gallery />
           <WorkFlow />
           <Package />
           <TeamSection />
+          <KeyFeature />
           <TestimonialCard />
           <BlogSection />
           <Subscribe />

@@ -4,6 +4,10 @@ import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
 import Performance from 'assets/feature/performance.svg';
+import Ruler from 'assets/icons/ruler.svg';
+import Hammer from 'assets/icons/hammer.svg';
+import Tape from 'assets/icons/measuring.svg';
+import Circular from 'assets/icons/brush.svg';
 import Partnership from 'assets/feature/partnership.svg';
 import Subscription from 'assets/feature/subscription.svg';
 import Support from 'assets/feature/support.svg';
@@ -11,41 +15,41 @@ import Support from 'assets/feature/support.svg';
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    imgSrc: Ruler,
+    altText: 'Quality Products',
+    title: 'Quality Products',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'TMK Inc. can source the highest grade hardwoods, repurposed furniture, reclaimed wood. We can also provide cost effective laminates, Medium-Density Fiberboard (MDF) and melamine board.',
   },
   {
     id: 2,
-    imgSrc: Partnership,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    imgSrc: Hammer,
+    altText: 'Original Projects',
+    title: 'Original Projects',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Every situation is unique, requiring slight modifications, adjustments or additions. We evaluate the space, listen to what the customer wants and provide a design. Our design is based on our previous experiences and what is most practical.',
   },
   {
     id: 3,
-    imgSrc: Subscription,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    imgSrc: Tape,
+    altText: 'Specified Millwork',
+    title: 'Specified Millwork',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Tmk Inc. has supplied numerous Commercial, Institutional and Industrial millwork according to design Specifications.',
   },
   {
     id: 4,
-    imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    imgSrc: Circular,
+    altText: 'Artisanal Craftsmanship',
+    title: 'Artisanal Craftsmanship',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Working with customers to bring their vision to reality. We design everything from the group up by hand.',
   },
 ];
 
 export default function Feature() {
   return (
-    <section sx={{ variant: 'section.feature' }}>
+    <section sx={{ variant: 'section.keyFeature' }}>
       <Container>
         <SectionHeader
           slogan="Quality features"
