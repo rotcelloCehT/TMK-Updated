@@ -1,10 +1,13 @@
 1. SHAPE MAKER (SVG):
   -https://www.softr.io/tools/svg-shape-generator
 
+2. FINISH SECTIONS
 
-4. Link explore button on banner to Gallery
 
-5. @-- EXTRA --@
+
+3. @-- EXTRA --@
  -Create the Layout for the form so it accepts all fields. 
 
+ 4. google maps instead of video.
+  - I ran "npm install --save react-google-maps"
 

@@ -110,6 +110,10 @@ export default {
       pt: [8, null, 9, null, null, 10, null, '180px'],
       pb: ['90px', null, 9, null, null, 10, null, '180px'],
     },
+    team: {
+      pt: [8, null, 9, null, null, 10, null, '180px'],
+      pb: ['90px', null, 9, null, null, 10, null, '180px'],
+    },
   },
   sectionHeader: {
     width: ['100%', null, '540px'],
@@ -264,7 +268,7 @@ export default {
       color: 'white',
       bg: 'primary',
       '&:hover': {
-        boxShadow: 'rgba(233, 76, 84, 0.57) 0px 9px 20px -5px',
+        boxShadow: '#1C73BA 0px 9px 20px -5px',
       },
     },
     whiteButton: {

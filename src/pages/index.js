@@ -26,14 +26,14 @@ export default function IndexPage() {
           <Banner />
           <Gallery />
           <Feature />
-          {/* <ServiceSection /> */}
           <CoreFeature />
-          <WorkFlow />
-          <Package />
+          <WorkFlow />  
+          {/* <Package /> */}
           <TeamSection />
-          <KeyFeature />
+          <ServiceSection />
+          {/* <KeyFeature /> */}
           <TestimonialCard />
-          <BlogSection />
+          {/* <BlogSection /> */}
           <Subscribe />
         </Layout>
       </StickyProvider>
