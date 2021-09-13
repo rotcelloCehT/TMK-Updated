@@ -106,7 +106,7 @@ export default function Subscribe() {
                     <div className="success">{status.info.msg}</div>
                   )}
                 </div>
-                <Button
+                {/* <Button
                   type="submit"
                   disabled={status.submitting}
                   className="subscribe__btn"
@@ -117,29 +117,33 @@ export default function Subscribe() {
                       ? 'Subscribe'
                       : 'Submitted'
                     : 'Submitting...'}
-                </Button>
+                </Button> */}
               </Flex>
             </form>
             <form name="contact" method="post" data-netlify="true" >
-              <input type="hidden" name="form-name" value="contact" />
-              <div className="form-field">
-                <label htmlFor="name">Name:</label> 
-                <input type="text" id="name" name="name" required />
-              </div>
-              <div className="form-field">
-                <label htmlFor="email">Email:</label> 
-                <input type="email" id="email" name="email" required />
-              </div>
-              <div className="form-field">
-                <label htmlFor="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-              <div className="form-field">
-                <button type="submit">
-                  <p>Submit</p>
-                  <img src={ sendIcon } alt="submit" />
-                </button>
-              </div>
+              <Flex sx={styles.subscribeFormFinal}>
+                <input type="hidden" name="form-name" value="contact" />
+                {/* <div className="form-field"> */}
+                  <label sx={{ variant: 'styles.srOnly' }}  htmlFor="name">Name</label> 
+                  <Input type="text" id="name" name="name" placeholder="Enter your name" required />
+              </Flex>
+                {/* </div> */}
+                {/* <div className="form-field"> */}
+                <Flex sx={styles.subscribeFormFinal}>
+                  <label sx={{ variant: 'styles.srOnly' }} htmlFor="email">Email address</label> 
+                  <Input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                {/* </div> */}
+                {/* <div className="form-field">
+                  <label htmlFor="message">Message:</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <div className="form-field">
+                  <button type="submit">
+                    <p>Submit</p>
+                    <img src={ sendIcon } alt="submit" />
+                  </button>
+                </div> */}
+              </Flex>
             </form>
           </Box>
         </Box>
@@ -203,6 +207,63 @@ const styles = {
         opacity: 1,
       },
     },
+    '.subscribe__btn': {
+      flexShrink: 0,
+      ml: [0, 2],
+      backgroundColor: ['text', 'primary'],
+      mt: [2, 0],
+      py: ['15px'],
+    },
+  },
+  // ///////////////////////////////////////////////////////////////
+  subscribeFormFinal: {
+    mt: [6, null, null, 7],
+    backgroundColor: ['transparent', 'white'],
+    borderRadius: [0, 50],
+    borderRadius: [0, 15],
+    overflow: 'hidden',
+    p: [0, 1],
+    flexDirection: ['column'],
+    '[type="email"], [type="text"]': {
+      border: 0,
+      borderRadius: 50,
+      fontFamily: 'body',
+      fontSize: ['14px', null, 2],
+      fontWeight: 500,
+      color: 'heading',
+      py: 1,
+      px: [4, null, 6],
+      backgroundColor: ['white', 'transparent'],
+      height: ['52px', null, '60px'],
+      textAlign: ['center', 'left'],
+      '&:focus': {
+        boxShadow: '0 0 0 0px',
+      },
+      '::placeholder': {
+        color: 'primary',
+        opacity: 1,
+      },
+    },
+    // '[type="text"]': {
+    //   border: 0,
+    //   borderRadius: 50,
+    //   fontFamily: 'body',
+    //   fontSize: ['14px', null, 2],
+    //   fontWeight: 500,
+    //   color: 'heading',
+    //   py: 1,
+    //   px: [4, null, 6],
+    //   backgroundColor: ['white', 'transparent'],
+    //   height: ['52px', null, '60px'],
+    //   textAlign: ['center', 'left'],
+    //   '&:focus': {
+    //     boxShadow: '0 0 0 0px',
+    //   },
+    //   '::placeholder': {
+    //     color: 'primary',
+    //     opacity: 1,
+    //   },
+    // },
     '.subscribe__btn': {
       flexShrink: 0,
       ml: [0, 2],
