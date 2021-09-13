@@ -4,6 +4,8 @@ import fetch from 'isomorphic-unfetch';
 import { jsx } from 'theme-ui';
 import { Container, Flex, Box, Button, Input, Text, Heading } from 'theme-ui';
 
+import sendIcon from '../assets/sendIcon.svg';
+
 export default function Subscribe() {
   // 1. Create a reference to the input so we can fetch/clear it's value.
   const inputEl = useRef(null);
@@ -117,6 +119,27 @@ export default function Subscribe() {
                     : 'Submitting...'}
                 </Button>
               </Flex>
+            </form>
+            <form name="contact" method="post" data-netlify="true" >
+              <input type="hidden" name="form-name" value="contact" />
+              <div className="form-field">
+                <label htmlFor="name">Name:</label> 
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div className="form-field">
+                <label htmlFor="email">Email:</label> 
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div className="form-field">
+                <label htmlFor="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div className="form-field">
+                <button type="submit">
+                  <p>Submit</p>
+                  <img src={ sendIcon } alt="submit" />
+                </button>
+              </div>
             </form>
           </Box>
         </Box>

@@ -10,3 +10,7 @@ module.exports = {
   //   ],
   // },
 };
+
+export const KNOWN_PATHS = {
+  CONFIG_FILE: getPath('next-sitemap.config.js'),
+}
