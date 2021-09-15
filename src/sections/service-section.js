@@ -24,31 +24,31 @@ import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
 
 const data = {
-  subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  subTitle: 'Address:',
+  title: '15115 Hwy 27, Nobleton, ON',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: "Phone",
+      title: "Phone:",
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        "416 505 5812",
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Email',
+      title: 'Email:',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        "Jason@tmkinc.ca",
     },
   ],
 };
 
 export default function ServiceSection() {
   return (
-    <section sx={{ variant: 'section.services' }}>
+    <section sx={{ variant: 'section.services' }} id="map" >
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Map />

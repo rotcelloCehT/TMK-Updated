@@ -11,13 +11,14 @@ const data = {
   title: 'Working with passion',
   description:
     'TMK Inc. is small enough to care and large enough to get the job done. We have decades of Carpentry experience and experience in all types of construction. Ultimately, we are a family business and we treat our customers the same way.',
-  btnName: 'Get Started',
-  btnURL: '#',
+  btnName: 'Contact',
+  btnURL: 'contact',
+  btnOffset: -100,
 };
 
 export default function CoreFeature() {
   return (
-    <section sx={{ variant: 'section.coreFeature' }}>
+    <section sx={{ variant: 'section.coreFeature' }} id="services">
       <Container sx={styles.containerBox}>
         <Box sx={styles.contentBox}>
           <TextFeature
@@ -26,6 +27,7 @@ export default function CoreFeature() {
             description={data.description}
             btnName={data.btnName}
             btnURL={data.btnURL}
+            btnOffset={data.btnOffset}
           />
         </Box>
         <Box sx={styles.thumbnail}>

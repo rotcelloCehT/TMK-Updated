@@ -74,7 +74,7 @@ export default function Subscribe() {
     handleSendGridResponse(res.status, text);
   };
   return (
-    <section id="subscribe" >
+    <section id="contact" >
       <Container>
         <Box sx={styles.contentBox}>
           <Box sx={styles.contentBoxInner}>
@@ -234,7 +234,6 @@ const styles = {
     mt: [6, null, null, 7],
     overflow: 'hidden',
     p: [0, 1],
-    border: '1px solid orange',
     flexDirection: 'column',
     '[type="email"], [type="text"]': {
       border: 0,
@@ -266,9 +265,13 @@ const styles = {
       color: 'heading',
       py: 1,
       px: [4, null, 6],
+      mt: '10px',
       backgroundColor: ['white', 'transparent'],
       height: ['300px','250px'],
       textAlign: ['center', 'left'],
+      '::placeholder': {
+        fontSize: ['14px', null, 2],
+      },
       '&:focus': {
         boxShadow: '0 0 0 0px',
         outline: 'none',
@@ -309,6 +312,5 @@ const styles = {
     borderRadius: [0, 15],
     overflow: 'hidden',
     p: [0, 1],
-    border: '1px solid red',
   }
 };

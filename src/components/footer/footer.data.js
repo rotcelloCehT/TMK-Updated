@@ -1,54 +1,62 @@
 import Chat from 'assets/widget/chat.svg';
 import Community from 'assets/widget/community.svg';
 import Github from 'assets/widget/github.svg';
+import Boots from 'assets/icons/boots.svg';
+import Helmet from 'assets/icons/helmet.svg';
+import Tools from 'assets/icons/tools.svg';
+
 
 export default {
   widgets: [
     {
       id: 1,
-      iconSrc: Chat,
-      altText: 'Community',
-      title: 'Join the Community',
+      iconSrc: Boots,
+      altText: 'Workers Ready',
+      title: 'Workers Ready',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+        'Should the task require more people, TMK has connections in every industry.',
     },
     {
       id: 2,
-      iconSrc: Community,
-      altText: 'Chat',
-      title: 'Chat Communication',
+      iconSrc: Helmet,
+      altText: 'Safety First',
+      title: 'Safety First',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+        'Peace of mind is most important when you have work done in your home.',
     },
     {
       id: 3,
-      iconSrc: Github,
-      altText: 'Github',
-      title: 'Github Access',
+      iconSrc: Tools,
+      altText: 'Equiped',
+      title: 'Equiped To Handle',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor.',
+        'We have all the tools and knowledge necesseary to assist you with your project.',
     },
   ],
   menuItem: [
     {
-      path: '/',
+      path: '#home',
       label: 'Home',
     },
     {
-      path: '/',
-      label: 'Adversite',
+      path: '#features',
+      label: 'Features',
     },
     {
-      path: '/',
-      label: 'Supports',
+      path: '#services',
+      label: 'Services',
     },
     {
-      path: '/',
-      label: 'Marketing',
+      path: '#map',
+      label: 'Find Us',
     },
     {
-      path: '/',
-      label: 'Contact',
+      path: '#testimonial',
+      label: 'Testimonials',
+    },
+    {
+      path: '#contact',
+      label: 'Contact Us',
     },
   ],
 };

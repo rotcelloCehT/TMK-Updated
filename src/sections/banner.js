@@ -31,7 +31,7 @@ export default function Banner() {
                 smooth={true}
                 offset={-50}
                 duration={500}
-                >Explore
+                >See Our Work
               </Link>
           </Button>
         </Box>

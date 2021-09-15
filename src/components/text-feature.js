@@ -1,12 +1,14 @@
 /** @jsx jsx */
-import { jsx, Box, Heading, Text, Button, Link } from 'theme-ui';
+import { jsx, Box, Heading, Text, Button } from 'theme-ui';
+import { Link } from 'react-scroll';
 
 export default function TextFeature({
   subTitle,
   title,
   description,
   btnName,
-  btnURL = '#',
+  btnURL,
+  btnOffset,
 }) {
   return (
     <Box sx={styles.card}>
@@ -27,8 +29,19 @@ export default function TextFeature({
 
       {btnName && (
         <Link href={btnURL} variant="default">
-          <Button variant="primary" aria-label={btnName}>
+          {/* <Button variant="primary" aria-label={btnName} >
             {btnName}
+          </Button> */}
+          <Button variant="primary">
+            <Link
+                activeClass="active"
+                to={btnURL}
+                spy={true}
+                smooth={true}
+                offset={btnOffset}
+                duration={500}
+                >{btnName}
+              </Link>
           </Button>
         </Link>
       )}
