@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react';
 import fetch from 'isomorphic-unfetch';
 import { jsx } from 'theme-ui';
-import { Container, Flex, Box, Button, Input, Text, Heading } from 'theme-ui';
+import { Container, Flex, Box, Button, Input, Text, Heading, Textarea } from 'theme-ui';
 
 import sendIcon from '../assets/sendIcon.svg';
 
@@ -85,7 +85,7 @@ export default function Subscribe() {
               Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
               tempor incididunt labore dolore.
             </Text>
-            <form onSubmit={subscribe}>
+            {/* <form onSubmit={subscribe}>
               <Flex sx={styles.subscribeForm}>
                 <label htmlFor="email" sx={{ variant: 'styles.srOnly' }}>
                   Email Address
@@ -106,7 +106,7 @@ export default function Subscribe() {
                     <div className="success">{status.info.msg}</div>
                   )}
                 </div>
-                {/* <Button
+                <Button
                   type="submit"
                   disabled={status.submitting}
                   className="subscribe__btn"
@@ -117,32 +117,46 @@ export default function Subscribe() {
                       ? 'Subscribe'
                       : 'Submitted'
                     : 'Submitting...'}
-                </Button> */}
+                </Button>
               </Flex>
-            </form>
+            </form> */}
             <form name="contact" method="post" data-netlify="true" >
-              <Flex sx={styles.subscribeFormFinal}>
-                <input type="hidden" name="form-name" value="contact" />
-                {/* <div className="form-field"> */}
-                  <label sx={{ variant: 'styles.srOnly' }}  htmlFor="name">Name</label> 
-                  <Input type="text" id="name" name="name" placeholder="Enter your name" required />
-              </Flex>
-                {/* </div> */}
-                {/* <div className="form-field"> */}
-                <Flex sx={styles.subscribeFormFinal}>
-                  <label sx={{ variant: 'styles.srOnly' }} htmlFor="email">Email address</label> 
-                  <Input type="email" id="email" name="email" placeholder="Enter your email address" required />
-                {/* </div> */}
-                {/* <div className="form-field">
-                  <label htmlFor="message">Message:</label>
-                  <textarea id="message" name="message" required></textarea>
-                </div>
-                <div className="form-field">
-                  <button type="submit">
-                    <p>Submit</p>
-                    <img src={ sendIcon } alt="submit" />
-                  </button>
-                </div> */}
+            <Flex sx={styles.subscribeFormFinal}>
+                <Flex sx={styles.subscribeFormFinalFlex}>
+                  <input type="hidden" name="form-name" value="contact" />
+                  {/* <div className="form-field"> */}
+                    <label sx={{ variant: 'styles.srOnly' }}  htmlFor="name">Name</label> 
+                    <Input type="text" id="name" name="name" placeholder="Enter your name" required />
+                </Flex>
+                  {/* </div> */}
+                  {/* <div className="form-field"> */}
+                  <Flex sx={styles.subscribeFormFinalFlex}>
+                    <label sx={{ variant: 'styles.srOnly' }} htmlFor="email">Email address</label> 
+                    <Input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                  </Flex>
+                  {/* </div> */}
+                  {/* <div className="form-field"> */}
+                  <Flex sx={styles.subscribeFormFinalFlex}>
+                    <label  sx={{ variant: 'styles.srOnly' }} htmlFor="message">Message:</label>
+                    <Textarea id="message" name="message" placeholder="Message" required></Textarea>
+                  </Flex>
+                  {/* </div> */}
+                  <div className="form-field">
+                    <Button 
+                      type="submit"
+                      disabled={status.submitting}
+                      className="subscribe__btn"
+                      aria-label="Send"
+                    >
+                      {!status.submitting
+                        ? !status.submitted
+                          ? 'Send'
+                          : 'Submitted'
+                        : 'Submitting...'}
+                      {/* <img src={ sendIcon } alt="submit" /> */}
+                    </Button>
+                  </div>
+                
               </Flex>
             </form>
           </Box>
@@ -218,15 +232,13 @@ const styles = {
   // ///////////////////////////////////////////////////////////////
   subscribeFormFinal: {
     mt: [6, null, null, 7],
-    backgroundColor: ['transparent', 'white'],
-    borderRadius: [0, 50],
-    borderRadius: [0, 15],
     overflow: 'hidden',
     p: [0, 1],
-    flexDirection: ['column'],
+    border: '1px solid orange',
+    flexDirection: 'column',
     '[type="email"], [type="text"]': {
       border: 0,
-      borderRadius: 50,
+      borderRadius: [15, 50],
       fontFamily: 'body',
       fontSize: ['14px', null, 2],
       fontWeight: 500,
@@ -244,6 +256,26 @@ const styles = {
         opacity: 1,
       },
     },
+    Textarea: {
+      resize: 'none',
+      border: 0,
+      borderRadius: [15, 50],
+      fontFamily: 'body',
+      fontSize: ['14px', null, 2],
+      fontWeight: 500,
+      color: 'heading',
+      py: 1,
+      px: [4, null, 6],
+      backgroundColor: ['white', 'transparent'],
+      height: ['300px','250px'],
+      textAlign: ['center', 'left'],
+      '&:focus': {
+        boxShadow: '0 0 0 0px',
+        outline: 'none',
+        border: 'none',
+      },
+    },
+    
     // '[type="text"]': {
     //   border: 0,
     //   borderRadius: 50,
@@ -265,11 +297,18 @@ const styles = {
     //   },
     // },
     '.subscribe__btn': {
-      flexShrink: 0,
-      ml: [0, 2],
-      backgroundColor: ['text', 'primary'],
+      backgroundColor: 'yellow',
       mt: [2, 0],
-      py: ['15px'],
+      width: '50%',
     },
   },
+  subscribeFormFinalFlex: {
+    mb: '10px',
+    backgroundColor: ['transparent', 'white'],
+    borderRadius: [0, 50],
+    borderRadius: [0, 15],
+    overflow: 'hidden',
+    p: [0, 1],
+    border: '1px solid red',
+  }
 };
