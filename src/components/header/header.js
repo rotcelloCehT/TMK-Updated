@@ -13,7 +13,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={TMKLogo} sx={{ height:"70px" }} />
+          <Logo src={TMKLogo} sx={{ width:"100px" }} />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Heading, Text, Button } from 'theme-ui';
+import { jsx, Box, Heading, Text, Button} from 'theme-ui';
 import { Link } from 'react-scroll';
 
 export default function TextFeature({
@@ -28,20 +28,17 @@ export default function TextFeature({
       )}
 
       {btnName && (
-        <Link href={btnURL} variant="default">
-          {/* <Button variant="primary" aria-label={btnName} >
+        <Link
+            variant="default"
+            activeClass="active"
+            to={btnURL}
+            spy={true}
+            smooth={true}
+            offset={btnOffset}
+            duration={500}
+            >
+          <Button variant="primary" aria-label={btnName} >
             {btnName}
-          </Button> */}
-          <Button variant="primary">
-            <Link
-                activeClass="active"
-                to={btnURL}
-                spy={true}
-                smooth={true}
-                offset={btnOffset}
-                duration={500}
-                >{btnName}
-              </Link>
           </Button>
         </Link>
       )}

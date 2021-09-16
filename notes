@@ -1,60 +1,14 @@
-1. SHAPE MAKER (SVG):
-  -https://www.softr.io/tools/svg-shape-generator
-
-2. FINISH SECTIONS
-
-
-
-3. @-- EXTRA --@
- -Create the Layout for the form so it accepts all fields. 
-
- 4. google maps instead of video.
-  - I ran "npm install --save react-google-maps"
-
-
-
-FORM:
-<form name="contact" method="post">
-  <input type="hidden" name="form-name" value="contact" />
-  <div className="form-field">
-    <label htmlFor="name">Name:</label> 
-    <input type="text" id="name" name="name" required />
-  </div>
-  <div className="form-field">
-    <label htmlFor="email">Email:</label> 
-    <input type="email" id="email" name="email" required />
-  </div>
-  <div className="form-field">
-    <label htmlFor="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-  </div>
-  <div className="form-field">
-    <button type="submit">
-      <p>Submit</p>
-      <img src={ sendIcon } alt="submit" />
-    </button>
-  </div>
-</form>
-
-
-
-HTML:
-<form 
-  name="contact" 
-  netlify 
-  netlify-honeypot="bot-field" 
-  hidden
->
-  <input type="text"  name="name">
-  <input type="email" name="email">
-  <textarea name="message"></textarea>
-</form>
-
-
-
 // 2021-09-13
 - Ran " npm run build "
 
 
 ICONS PACKS
 https://www.svgrepo.com/collection/tools-flat-vectors/
+
+
+2021-09-16: 
+  1.$ Compressed images 
+  2. Fix logo in header on Mobile.
+  3. Change address icons.
+  4. Subscribe form button fix.
+  5. Thank you page.

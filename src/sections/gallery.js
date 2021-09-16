@@ -4,7 +4,11 @@ import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-import KitchenImage from 'assets/images/kitchen.jpg';
+import KitchenImage1 from 'assets/images/compressed3.jpg';
+import KitchenImage2 from 'assets/images/floor1.jpg';
+import KitchenImage3 from 'assets/images/floor2.jpg';
+import KitchenImage4 from 'assets/images/compressed5.jpg';
+import Sample1 from 'assets/images/sample1.webp';
 import Avatar1 from 'assets/testimonial/avatar1.png';
 import Avatar2 from 'assets/testimonial/avatar2.png';
 import Avatar3 from 'assets/testimonial/avatar3.png';
@@ -16,7 +20,7 @@ const data = [
     title: 'Modern look & trending design',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: KitchenImage,
+    avatar: KitchenImage1,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 4,
@@ -26,7 +30,7 @@ const data = [
     title: 'Design Quality & performance',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: KitchenImage,
+    avatar: KitchenImage2,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 5,
@@ -36,7 +40,7 @@ const data = [
     title: 'Layout and organized layers',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: KitchenImage,
+    avatar: KitchenImage1,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 5,
@@ -46,7 +50,7 @@ const data = [
     title: 'Modern look & trending design',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: KitchenImage,
+    avatar: KitchenImage2,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
     review: 4,
