@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button, Link} from 'theme-ui';
-// import { Link } from 'react-scroll';
+import { Container, Box, Heading, Text, Image, Button} from 'theme-ui';
+import Link from 'next/link';
 import TMKLogo from 'assets/tmklogo.svg';
 import EmailImg from 'assets/images/email-image.svg';
 import BannerImg from 'assets/tools.svg';
