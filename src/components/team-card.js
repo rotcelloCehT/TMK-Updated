@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Text, Heading, Image, Box, Link } from 'theme-ui';
+import { Text, Heading, Image, Box } from 'theme-ui';
+import Link from 'next/link'
 
 export default function TeamCard({ src, altText, title, designation, social }) {
   return (

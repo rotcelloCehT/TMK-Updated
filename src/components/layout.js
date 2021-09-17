@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Sticky from 'react-stickynode';
 import Header from './header/header';
 import Footer from './footer/footer';
-export default function Layout({ children }) {
+export default function Layout({ children, footerWidgets }) {
   const [isSticky, setIsSticky] = useState(false);
   const handleStateChange = (status) => {
     if (status.status === Sticky.STATUS_FIXED) {
@@ -26,7 +26,7 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
-      <Footer />
+      <Footer footerWidgets={footerWidgets}/>
     </React.Fragment>
   );
 }

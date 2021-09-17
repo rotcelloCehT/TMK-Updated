@@ -120,7 +120,7 @@ export default function Subscribe() {
                 </Button>
               </Flex>
             </form> */}
-            <form name="contact" method="post" data-netlify="true" >
+            <form name="contact" method="post" data-netlify="true" action= "/thankyou">
             <Flex sx={styles.subscribeFormFinal}>
                 <Flex sx={styles.subscribeFormFinalFlex}>
                   <input type="hidden" name="form-name" value="contact" />
@@ -301,7 +301,7 @@ const styles = {
     // },
     '.subscribe__btn': {
       backgroundColor: 'yellow',
-      mt: [2, 0],
+      mt: 2,
       width: '50%',
     },
   },

@@ -3,10 +3,11 @@ import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
 import FooterLogo from 'assets/tmklogo.svg';
-export default function Footer() {
+export default function Footer({footerWidgets}) {
   return (
     <footer sx={styles.footer}>
       <Container>
+        {footerWidgets===true && (
         <Grid sx={styles.widgets}>
           {data.widgets.map((item) => (
             <Box
@@ -21,6 +22,7 @@ export default function Footer() {
             </Box>
           ))}
         </Grid>
+        )}
         {/* End of footer widgets area */}
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">

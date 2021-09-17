@@ -22,6 +22,8 @@ import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
+import Phone from 'assets/icons/phone.svg';
+import Email from 'assets/icons/email.svg';
 
 const data = {
   subTitle: 'Address:',
@@ -29,7 +31,7 @@ const data = {
   features: [
     {
       id: 1,
-      imgSrc: Smart,
+      imgSrc: Phone,
       altText: "Phone",
       title: "Phone:",
       text:
@@ -37,7 +39,7 @@ const data = {
     },
     {
       id: 2,
-      imgSrc: Secure,
+      imgSrc: Email,
       altText: 'Email',
       title: 'Email:',
       text:

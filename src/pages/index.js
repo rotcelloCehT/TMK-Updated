@@ -21,7 +21,7 @@ export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
       <StickyProvider>
-        <Layout>
+        <Layout footerWidgets={true}>
           <SEO title="Startup Landing 005" />
           <Banner />
           <Gallery />
@@ -35,7 +35,7 @@ export default function IndexPage() {
           <TestimonialCard />
           {/* <BlogSection /> */}
           <Subscribe />
-        </Layout>
+        </Layout >
       </StickyProvider>
     </ThemeProvider>
   );
